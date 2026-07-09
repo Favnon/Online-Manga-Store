@@ -280,23 +280,3 @@ sequenceDiagram
 * **ทุกสัปดาห์**: จัดระเบียบและปรับปรุงประสิทธิภาพของฐานข้อมูล, อัปเดตแพตช์ความปลอดภัยซอฟต์แวร์ระบบ และทดสอบระบบตรวจสอบบัญชีความปลอดภัยของผู้ใช้
 * **ทุกเดือน**: อัปเดตและเช็คความถูกต้องของรายการการ์ตูนที่จะออกใหม่ประจำสัปดาห์ และตรวจวิเคราะห์หาสาเหตุหน้าเว็บที่ดาวน์โหลดช้าเกินขีดจำกัดมาตรฐาน
 ---
-## 📅 11. แผนการดำเนินงาน 4 สัปดาห์ (4-Week Project Timeline)
-```mermaid
-gantt
-    title แผนการดำเนินงานพัฒนาโปรเจกต์ SIA Online Manga (4 สัปดาห์)
-    dateFormat  YYYY-MM-DD
-    section สัปดาห์ที่ 1
-    รวบรวมข้อมูลและกำหนดขอบเขตระบบ (Requirements)       :active, des1, 2026-07-09, 2d
-    ออกแบบระบบ Diagrams (Use Case, Class, Sequence)   :active, des2, after des1, 3d
-    ออกแบบ UI Wireframes และ UI Mockups                 :active, des3, after des2, 2d
-    section สัปดาห์ที่ 2
-    ออกแบบฐานข้อมูล Database Schema (PostgreSQL)          :database, db1, 2026-07-16, 2d
-    พัฒนา APIs ระบบ Login และระบบจัดการข้อมูลสินค้า (Backend)  :backend, bk1, after db1, 5d
-    section สัปดาห์ที่ 3
-    พัฒนาหน้าบ้านหน้าหลัก และตะกร้าสินค้า (React Frontend)     :frontend, ft1, 2026-07-23, 4d
-    เชื่อมต่อระบบหน้าบ้านเข้ากับ API หลังบ้าน (Integration)    :integration, int1, after ft1, 3d
-    section สัปดาห์ที่ 4
-    ทดสอบระบบแบบ Unit Test, Integration Test และ E2E    :testing, test1, 2026-07-30, 3d
-    ตรวจสอบเกณฑ์ประสิทธิภาพ (SLA Performance Test)        :testing, test2, after test1, 2d
-    ทำ Deployment และจัดทำคู่มือประกอบโปรเจกต์               :deploy, dpl1, after test2, 2d
-```
